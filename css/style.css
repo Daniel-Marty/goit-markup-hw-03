@@ -8,6 +8,15 @@
   --third-background-color: #2F303A;
  
 }
+/*----------------------------------------BOX SIZING--------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
 /*---------------------------------------------BODY--------------------------------------*/
 body {
   font-family: "roboto", sans-serif;
@@ -15,12 +24,39 @@ body {
   color: var(--primary-text-color);
 }
 .list {
-  list-style: none;
-}
+list-style: none;
+text-decoration: none;
 
+
+}
+.container {
+margin-left: auto;
+margin-right: auto;
+width: 1200px;
+outline: 2px solid tomato;
+}
+h1, 
+h2,
+h3, 
+h4, 
+h5,
+h6, 
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0  ;
+}
+.section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.no-padding {
+padding-top: 0; 
+padding-bottom: 0;}
 
 /*---------------------------------------------site nav-----------------------------------------------*/
 .logo {
+margin-left: 0px;
 text-decoration: none;
 font-family: Raleway;
 font-weight: 700;
@@ -35,18 +71,33 @@ letter-spacing: 0.03em;
 color: #000000;
 }
 .nav {
-  color: var(--secondary-text-color);
+  display: flex;
+  padding-left: 0px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+}
 .nav:hover,
 .nav:focus {
-  color: var(--accent-text-color);
-  
+color: var(--accent-text-color);
 }
+.nav-item {
+color: var(--secondary-text-color);
+margin-right: 50px;
+}
+.nav-item:last-child {
+margin-right: 0;
+}
+.nav-link {
+color: var(--secondary-text-color);
+text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+color: var(--accent-text-color);
 }
 .current {
   color:var(--secondary-text-color)
@@ -54,18 +105,23 @@ color: #000000;
 .section-title {
   color: var(--secondary-text-color)
 }
-.nav.adress-header {
+.contacts {
   color: var(--primary-text-color);
- 
+  text-decoration: none;
 }
-.nav.adress-header:hover,
-.nav.adress-header:focus {
-  color: var(--accent-text-color);
+.contacts:hover,
+.contacts:focus {
+color: var(--accent-text-color);
 }
+.contacts {
+padding-left: 0px;
+}
+
 
 /*---------------------------------------------HERO--------------------------------------*/
 .hero {
 background-color: var(--third-background-color);
+text-align: center;
 
 }
 .hero-title {
@@ -76,11 +132,15 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+
+
 }
 
 /*---------------------------------------------BUTTON--------------------------------------*/
 .button {
-outline: none;
+display: inline-block;
+padding: 10px 32px;
+border-radius: 6px;
 cursor: pointer;
 color: var(--title-text-color);
 background-color: var(--accent-text-color);
@@ -115,6 +175,10 @@ background-color: var(--accent-text-color);
 }
 .filter-button {
 }
+.btn {
+display: inline-block;
+
+}
 /*--------------------------------------------SECTION--------------------------------------------*/
 .logo {
   color:var(--secondary-text-color)
@@ -129,6 +193,7 @@ ul {
 /*-----------------------------------------Features Как мы работаем--------------------------------------*/
 .features {
 color: var(--secondary-text-color);
+margin-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
