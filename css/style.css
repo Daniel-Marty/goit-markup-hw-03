@@ -31,12 +31,12 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+ 
 }  
 .container-no-padding {
     width: 1200px;
     margin: 0 auto;
-    outline: 2px solid tomato;
+   
   }
   h1,
   h2,
@@ -83,6 +83,7 @@ body {
   }
   .logo-blue {
     color: var(--accent-text-color);
+    
   }
   .logo-studio {
     color: #000000;
@@ -280,7 +281,7 @@ ul {
 .team {
   display: flex;
   justify-content: space-between;
-}
+ }
 .names-white {
   background-color: var(--background-color);
   border-radius: 4px;
@@ -312,8 +313,16 @@ padding-bottom: 10px;
 .footer-padding-63 {
   padding-bottom: 63px;
 }
+.logo-foot-main {
+  display: block;
+  padding-bottom: 20px;
+}
 .logo-footer {
   color: var(--title-text-color);
+}
+.foot-main-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-address {
@@ -327,6 +336,7 @@ padding-bottom: 10px;
 }
 .email-phone {
   text-decoration: none;
+  
   font-style: normal;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
@@ -338,11 +348,17 @@ padding-bottom: 10px;
 .header-border {
   border-bottom: 1px solid #ececec;
 }
+.border-main {
+   border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
 .border {
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
   padding-left: 24px;
+  padding-bottom: 27px;
 }
 
 .logo-header-portfolio {
@@ -352,6 +368,10 @@ padding-bottom: 10px;
 .nav-portfolio {
   display: flex;
   align-items: center;
+}
+
+.p-portfolio-padding {
+padding-bottom: 27px;
 }
 .ul-filter {
   display: flex;
