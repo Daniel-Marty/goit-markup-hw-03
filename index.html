@@ -17,54 +17,57 @@
 <body>
         <!--ШАПКА-->
         <header>
-                <nav>
-                    <a href="" class="logo"><span class="logo-blue">Web</span><span class="logo-studio">Studio</span></a>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="./index.html" class="nav-link current">Студия</a>
-                        </li class="nav-item">
-                        <li class="nav-item">
-                            <a href="./portfolio.html" class="nav-link">Портфолио</a>
-                        </li class="nav-item">
-                        <li>
-                            <a href="" class="nav-link">Контакты</a>
+               <div class="header-main">
+                    <nav>
+                        <a href="" class="logo"><span class="logo-blue">Web</span><span class="logo-studio">Studio</span></a>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link current">Студия</a>
+                            </li class="nav-item">
+                            <li class="nav-item">
+                                <a href="./portfolio.html" class="nav-link">Портфолио</a>
+                            </li class="nav-item">
+                            <li>
+                                <a href="" class="nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts">
+                        <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
+                        <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
                         </li>
                     </ul>
-                </nav>
-                <ul class="contacts">
-                    <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
-                    <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li></li>
-                </ul>
+               </div>
         </header>
     <main> <!--ГЕРОЙ-->
         <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения<br>
                     для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="hero-button button">Заказать услугу</button>
             </div>
         </section>
                     <!-------------------КАК МЫ РАБОТАЕМ------------------------------>
-        <section class="section">
-            <div class="container">
-                <h2 class="title-examples">Как мы работаем</h2>
-                <ul>
-                    <li>
+        <section>
+            <div class="container margin-98">
+                <!--<h2 class="title-examples">Как мы работаем</h2> --> 
+                <ul class="ul-features">
+                    <li class="ul-calc">
                         <h3 class="features">Внимание к деталям</h3>
                         <p class="features-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
-                    </li>
+                    </li class="ul-calc">
                     <li>
                         <h3 class="features">Пунктуальность</h3>
                         <p class="features-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за
                             собой.</p>
                     </li>
-                    <li>
+                    <li class="ul-calc">
                         <h3 class="features">Планирование</h3>
                         <p class="features-paragraph">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="ul-calc">
                         <h3 class="features">Современные ТЕХНОЛОГИИ</h3>
                         <p class="features-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -72,10 +75,10 @@
             </div>            
         </section>
         <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
-        <section class="section">
-            <div class="container">
+        <section>
+            <div class="container-no-padding">
                 <h2 class="title-examples">Чем мы занимаемся</h2>
-                <ul>
+                <ul class="ul-what-we-do">
                     <li><img width="370" height="294" src="./images/box1.jpg" alt="Картинка планшета"> </li>
                     <li><img width="370" height="294" src="./images/box2.jpg" alt="Картинка ноутбука"> </li>
                     <li><img width="370" height="294" src="./images/box3.jpg" alt="Картинка планшета в руках"> </li>
@@ -84,28 +87,36 @@
         </section>
         <!--НАША КОМАНДА-->
         <section class="out-team section">
-            <div class="container">
+            <div class="container-no-padding">
                 <h2 class="title-examples">Наша команда</h2>
-                <ul>
+                <ul class="team">
                     <li>
                         <img src="./images/team1.jpg" alt="Игорь_Демьяненко" width=270 height="260">
-                        <h3 class="names responcibilities">Игорь Демьяненко</h3>
-                        <p class="responcibilities" lang="en">Product designer</p>
+                        <div class="border names-white">
+                            <h3 class="names responcibilities">Игорь Демьяненко</h3>
+                            <p class="responcibilities" lang="en">Product designer</p>
+                        </div>
                     </li>
                     <li>
                         <img src="./images/team2.jpg" alt="Ольга_Репина" width=270 height="260">
-                        <h3 class="names responcibilities">Ольга Репина</h3>
-                        <p class="responcibilities" lang="en">Frontend Developer</p>
+                        <div class="border names-white">
+                            <h3 class="names responcibilities">Ольга Репина</h3>
+                            <p class="responcibilities" lang="en">Frontend Developer</p>
+                        </div>
                     </li>
                     <li>
                         <img src="./images/team3.jpg" alt="Николай_Тарасов" width=270 height="260">
-                        <h3 class="names responcibilities">Николай Тарасов</h3>
-                        <p class="responcibilities" lang="en">Marketing</p>
+                        <div class="border names-white">
+                            <h3 class="names responcibilities">Николай Тарасов</h3>
+                            <p class="responcibilities" lang="en">Marketing</p>
+                        </div>
                     </li>
                     <li>
                         <img src="./images/team4.jpg" alt="Михаил_Ермаков" width=270 height="260">
-                        <h3 class="names responcibilities">Михаил Ермаков</h3>
-                        <p class="responcibilities" lang="en">UI Designer</p>
+                        <div class="border names-white">
+                            <h3 class="names responcibilities">Михаил Ермаков</h3>
+                            <p class="responcibilities" lang="en">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
