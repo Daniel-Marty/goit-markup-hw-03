@@ -17,10 +17,10 @@
 <body>
         <!--ШАПКА-->
         <header>
-               <div class="header-main">
-                    <nav>
-                        <a href="" class="logo"><span class="logo-blue">Web</span><span class="logo-studio">Studio</span></a>
-                        <ul class="nav">
+                <div class="container" >
+                    <nav class="header-main">
+                        <a href="" class="logo logo-header"><span class="logo-blue">Web</span><span class="logo-studio">Studio</span></a>
+                        <ul class="nav ul-header">
                             <li class="nav-item">
                                 <a href="./index.html" class="nav-link current">Студия</a>
                             </li>
@@ -31,16 +31,16 @@
                                 <a href="" class="nav-link">Контакты</a>
                             </li>
                         </ul>
-                    </nav>
-                    <ul class="contacts">
+                        <ul class="contacts-list" >
                         <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
                         <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
                         </li>
                     </ul>
+                    </nav>
                </div>
         </header>
     <main> <!--ГЕРОЙ-->
-        <section class="hero section">
+        <section class="hero-section">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения<br>
                     для вашего бизнеса</h1>
@@ -48,26 +48,26 @@
             </div>
         </section>
                     <!--КАК МЫ РАБОТАЕМ-->
-            <section>
-                    <div class="container margin-98">
+            <section class="section">
+            <div class="container-no-padding">
                 <!--<h2 class="title-examples">Как мы работаем</h2> --> 
                 <ul class="ul-features">
-                    <li class="ul-calc">
+                    <li class="features-item  last-child">
                         <h3 class="features">Внимание к деталям</h3>
                         <p class="features-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li >
-                    <li class="ul-calc">
+                    <li class="features-item">
                         <h3 class="features">Пунктуальность</h3>
                         <p class="features-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за
                             собой.</p>
                     </li>
-                    <li class="ul-calc">
+                    <li class="features-item">
                         <h3 class="features">Планирование</h3>
                         <p class="features-paragraph">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li class="ul-calc">
+                    <li class="features-item">
                         <h3 class="features">Современные ТЕХНОЛОГИИ</h3>
                         <p class="features-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -75,7 +75,7 @@
             </div>            
             </section>
         <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
-        <section>
+        <section class="section-what-we-do">
             <div class="container-no-padding">
                 <h2 class="title-examples">Чем мы занимаемся</h2>
                 <ul class="ul-what-we-do">
@@ -90,30 +90,30 @@
             <div class="container-no-padding">
                 <h2 class="title-examples">Наша команда</h2>
                 <ul class="team">
-                    <li>
-                        <img src="./images/team1.jpg" alt="Игорь_Демьяненко" width=270 height="260">
-                        <div class="border-main names-white">
+                    <li class="team-item">
+                        <img src="./images/team1.jpg" class="" alt="Игорь_Демьяненко" width=270 height="260">
+                        <div class="border-main">
                             <h3 class="names responcibilities">Игорь Демьяненко</h3>
                             <p class="responcibilities" lang="en">Product designer</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="team-item">
                         <img src="./images/team2.jpg" alt="Ольга_Репина" width=270 height="260">
-                        <div class="border-main names-white">
+                        <div class="border-main">
                             <h3 class="names responcibilities">Ольга Репина</h3>
                             <p class="responcibilities" lang="en">Frontend Developer</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="team-item">
                         <img src="./images/team3.jpg" alt="Николай_Тарасов" width=270 height="260">
-                        <div class="border-main names-white">
+                        <div class="border-main">
                             <h3 class="names responcibilities">Николай Тарасов</h3>
                             <p class="responcibilities" lang="en">Marketing</p>
                         </div>
                     </li>
-                    <li>
-                        <img src="./images/team4.jpg" alt="Михаил_Ермаков" width=270 height="260">
-                        <div class="border-main names-white">
+                    <li class="team-item">
+                        <img src="./images/team4.jpg" alt="Михаил_Ермаков" width=270 height="260" class="img">
+                        <div class="border-main">
                             <h3 class="names responcibilities">Михаил Ермаков</h3>
                             <p class="responcibilities" lang="en">UI Designer</p>
                         </div>
@@ -124,9 +124,9 @@
     </main>
         <!--ПОДВАЛ-->
     <footer class="footer"> 
-            <div class="container foot-main-padding">
+            <div class="container-no-padding">
                 <a href="" class="logo logo-foot-main"><span class="logo-blue">Web</span><span class="logo-footer">Studio</span></a><br>
-                <address  class="foot-ul-padding">
+                <address>
                     <ul>
                         <li><a href="https://goo.gl/maps/7hmKTm9yFbBLXRid7" class="nav footer-address">г. Киев, пр-т Леси Украинки,
                                 26</a><br></li>
@@ -135,6 +135,6 @@
                     </ul>
                 </address>
             </div>
-        </footer>
+    </footer>
 </body>
 </html>

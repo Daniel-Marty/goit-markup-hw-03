@@ -17,13 +17,14 @@
 </head>
 <body>
         <!--ШАПКА-->
-<header class="header-border">
-    <div class="container">
-        <nav class="nav-portfolio">
-            <a href="" class="logo logo-header-portfolio">WebStudio</a>
-            <ul class="header-ul-margin nav">
+<header>
+        <div class="container">
+        <nav class="header-main">
+            <a href="" class="logo logo-header"><span class="logo-blue">Web</span><span
+                    class="logo-studio">Studio</span></a>
+            <ul class="nav ul-header">
                 <li class="nav-item">
-                    <a href="./index.html" class="nav-link ">Студия</a>
+                    <a href="./index.html" class="nav-link">Студия</a>
                 </li>
                 <li class="nav-item">
                     <a href="./portfolio.html" class="nav-link current">Портфолио</a>
@@ -32,17 +33,18 @@
                     <a href="" class="nav-link">Контакты</a>
                 </li>
             </ul>
-        
-        <ul class="nav-portfolio ul-contacts-portfolio">
-            <li class="contacts-portfolio"><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
-            <li class="contacts-portfolio"><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
-        </ul>
+            <ul class="contacts-list">
+                <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
+                <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
+                </li>
+            </ul>
         </nav>
     </div>
 </header>
         <main>
-            <section class="portfolio-filter">
+            <section class="section">
                 <!--<h1>Портфолио</h1-->
+                <div class="container">
                 <ul class="ul-filter">
                     <li><button type="button" class="button filter-button">Все</button></li>
                     <li><button type="button" class="button filter-button">Веб-сайты</button></li>
@@ -50,67 +52,67 @@
                     <li><button type="button" class="button filter-button">Дизайн</button></li>
                     <li><button type="button" class="button filter-button">Маркетинг</button></li>
                 </ul>
-                <div class="container">
+                
                     <ul class="flex-container">
                         <li class="flex-item">
-                            <img width="370" height="294" src="./images/portfolio1.jpg" alt="Картинка сайта" class="img-nopadding">
-                            <div class="border">
+                            <img width="370" height="294" src="./images/portfolio1.jpg" alt="Картинка сайта">
+                            <div class="border-portfolio">
                                 <h2 class="portfolio-title">Технокряк</h2>
                                 <p>Веб-сайт</p>
                             </div>
                         </li>
                         <li class="flex-item">
                             <img width="370" height="294" src="./images/portfolio2.jpg" alt="Два баскетболиста">
-                            <div class="border">
+                            <div class="border-portfolio">
                                 <h2 class="portfolio-title">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
                                 <p>Дизайн</p>
                             </div>
                         </li>
                         <li class="flex-item">
                             <img width="370" height="294" src="./images/portfolio3.jpg" alt="Ресторан Seafood">
-                            <div class="border">
+                            <div class="border-portfolio">
                                 <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
                                 <p>Приложение</p>
                             </div>
                         </li>
                         <li class="flex-item">
                             <img width="370" height="294" src="./images/portfolio4.jpg" alt="Наушники">
-                            <div class="border">
+                            <div class="border-portfolio">
                                 <h2 class="portfolio-title">Проект <span lang="en">Prime</span></h2>
                                 <p>Маркетинг</p>
                             </div>
                         </li>
                         <li class="flex-item">
                             <img width="370" height="294" src="./images/portfolio5.jpg" alt="Две коробочки">
-                            <div class="border">
+                            <div class="border-portfolio">
                                 <h2 class="portfolio-title">Проект <span lang="en">Boxes</span></h2>
                                 <p>Приложение</p>
                             </div>
                         </li>
                         <li class="flex-item">
                             <img width="370" height="294" src="./images/portfolio6.jpg" alt="Монитор">
-                            <div class="border">
+                            <div class="border-portfolio">
                                 <h2 lang="en" class="portfolio-title">Inspiration has no Borders</h2>
                                 <p>Веб-сайт</p>
                             </div>
                         </li>
                         <li class="flex-item">
                             <img width="370" height="294" src="./images/portfolio7.jpg" alt="Открытая книга">
-                            <div class="border">
+                            <div class="border-portfolio">
                                 <h2 class="portfolio-title">Издание<span lang="en">Limited Edition</span></h2>
                                 <p>Дизайн</p>
                             </div>
                         </li>
                         <li class="flex-item">
                             <img width="370" height="294" src="./images/portfolio8.jpg" alt="Тэг одежды">
-                            <div class="border">
+                            <div class="border-portfolio">
                                 <h2 class="portfolio-title">Проeкт<span lang="">LAB</span></h2>
                                 <p>Маркетинг</p>
                             </div>
                         </li>
                         <li class="flex-item">
                             <img width="370" height="294" src="./images/portfolio9.jpg" alt="Работа за ноутом">
-                            <div class="border">
+                            <div class="border-portfolio">
                                 <h2 lang="en" class="portfolio-title">Growing Business</h2>
                                 <p>Приложение</p>
                             </div>
@@ -121,11 +123,13 @@
         </main>
         <!--ПОДВАЛ-->
         <footer class="footer">
-            <div class="container">
-                <a href="" class="logo logo-black" >WebStudio</a> <br>
+            <div class="container-no-padding">
+                <a href="" class="logo logo-foot-main"><span class="logo-blue">Web</span><span
+                        class="logo-footer">Studio</span></a><br>
                 <address>
-                    <ul class="footer-padding-63">
-                        <li><a href="https://goo.gl/maps/7hmKTm9yFbBLXRid7" style="text-decoration: none;" class="nav footer-address">г. Киев, пр-т Леси Украинки,
+                    <ul>
+                        <li><a href="https://goo.gl/maps/7hmKTm9yFbBLXRid7" class="nav footer-address">г. Киев, пр-т Леси
+                                Украинки,
                                 26</a><br></li>
                         <li><a href="mailto:info@devstudio.com" class="nav email-phone">info@devstudio.com</a><br></li>
                         <li><a href="tel:+380961111111" class="nav email-phone">+38 096 111 11 11</a></li>
