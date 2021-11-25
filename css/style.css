@@ -56,8 +56,11 @@ button {
 img {
   display: inline-block;
 }
+
 .img {
-  margin-right: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 address {
   font-style: normal;
@@ -78,6 +81,7 @@ address {
 /*---------------------------------------------site nav-----------------------------------------------*/
 .logo {
   margin-left: 0px;
+  color: var(--accent-text-color);
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
@@ -86,16 +90,18 @@ address {
   letter-spacing: 0.03em;
 }
 .logo-header {
+  color: var(--accent-text-color);
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
   color: var(--secondary-text-color);
   display: inline-block;
 }
-.logo:hover {
+.logo.logo-header {
   color: var(--accent-text-color);
 }
-.logo-blue {
+.logo-studio:hover,
+.logo-studio:active {
   color: var(--accent-text-color);
 }
 .logo-studio {
@@ -141,15 +147,15 @@ address {
   display: flex;
   margin-left: auto;
 }
+.contacts-last-child {
+  margin-left: 50px;
+}
 .contacts {
-  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: inline-block;
   color: var(--primary-text-color);
   text-decoration: none;
-}
-.contacts:last-child {
-  margin-left: 50px;
 }
 .contacts:hover,
 .contacts:focus {
@@ -207,8 +213,6 @@ address {
   color: var(--accent-text-color);
 }
 .filter-button {
-  margin-bottom: 34px;
-  margin-left: 8px;
   border-radius: 4px;
   color: var(--secondary-text-color);
   background-color: var(--secondary-background-color);
@@ -224,6 +228,13 @@ address {
 .filter-button:focus {
   color: var(--background-color);
   background-color: var(--accent-text-color);
+}
+.filter-margins {
+  margin-bottom: 50px;
+  margin-left: 8px;
+}
+.filter-margins:first-child {
+  margin-left: 0;
 }
 .btn {
   display: inline-block;
@@ -273,8 +284,13 @@ ul {
 /*---------------------------------------------EXAMPLES--------------------------------------*/
 .ul-what-we-do {
   display: flex;
-  justify-content: space-between;
   padding-left: 0;
+}
+.what-we-do-item {
+  margin-left: 30px;
+}
+.what-we-do-item:first-child {
+  margin-left: 0;
 }
 .title-examples {
   margin-bottom: 50px;
@@ -297,7 +313,7 @@ ul {
   display: inline-block;
 }
 .team-item {
-  margin-right: 40px;
+  margin-right: 30px;
   width: calc(100% / 4);
 }
 .team-item:last-child {
@@ -351,36 +367,34 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.nav.email-phone:hover,
-.nav.email-phone:focus {
+.email-phone:hover,
+.email-phone:focus {
   color: var(--accent-text-color);
 }
-.nav.footer-address:hover,
-.nav.footer-address:focus {
+.footer-address:hover,
+.footer-address:focus {
   color: var(--accent-text-color);
 }
-
+.footer-li-margins {
+  margin-bottom: 9px;
+}
+.footer-li-margins:last-child {
+  margin-bottom: 0;
+}
 /*---------------------------------------------PORTFOLIO--------------------------------------*/
 .header-border {
   border-bottom: 1px solid #ececec;
 }
 .border-main {
-  padding: 30px 57px;
-  border-bottom: 1px solid #ececec;
-  border-right: 1px solid #ececec;
-  border-left: 1px solid #ececec;
+  padding: 30px 32px;
   background-color: var(--background-color);
-  border-radius: 4px;
+  border-radius: 6px;
 }
 .border-portfolio {
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
   padding: 20px 24px;
-}
-
-.logo-header-portfolio {
-  color: #000000;
 }
 
 .nav-portfolio {
@@ -395,9 +409,6 @@ ul {
   display: flex;
   justify-content: center;
 }
-.ul-filter:not(:last-child) {
-  margin-left: 8px;
-}
 .portfolio-title {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -405,6 +416,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-top: 0;
+  margin-bottom: 4px;
 }
 .portfolio-paragraph {
   color: var(--primary-text-color);
