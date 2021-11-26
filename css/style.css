@@ -230,7 +230,6 @@ address {
   background-color: var(--accent-text-color);
 }
 .filter-margins {
-  margin-bottom: 50px;
   margin-left: 8px;
 }
 .filter-margins:first-child {
@@ -257,6 +256,12 @@ ul {
   display: inline-block;
   margin-left: 40px;
 }
+/*.features-item::before {
+  display: block
+  content: "";
+  height: 70px;
+  outline: 1px solid red;
+}*/
 .last-child {
   padding: 0;
   margin: 0;
@@ -408,6 +413,7 @@ ul {
 .ul-filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-title {
   color: var(--secondary-text-color);
